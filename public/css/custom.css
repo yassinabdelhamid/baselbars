@@ -51,3 +51,15 @@ section {
 .wave .shape-fill {
     fill: #202731;
 }
+
+.spacer {
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(./svg/layer1.svg);
+}
