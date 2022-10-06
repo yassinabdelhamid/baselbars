@@ -63,3 +63,70 @@ section {
 .layer1 {
     background-image: url(./svg/layer1.svg);
 }
+
+.layer2 {
+    background-image: url(./svg/layer2.svg);
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 164px;
+}
+
+.wave2 .shape-fill {
+    fill: #202731;
+}
+
+.wave3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 166px;
+}
+
+.wave3 .shape-fill {
+    fill: #DD3F31;
+}
+
+.wave4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave4 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 271px;
+}
+
+.wave4 .shape-fill {
+    fill: #FF0066;
+}
