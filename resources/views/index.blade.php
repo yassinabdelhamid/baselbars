@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
     <title>BaselBars</title>
 </head>
 
@@ -56,6 +57,26 @@
         <section>
             <h1>About Us</h1>
             <p>Random blablablablablabalabalabalabablabalabalbalablablablalabablalbalbalbalabl</p>
+            <svg id="visual" viewBox="0 0 900 300" width="900" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(480.95534248758355 164.05332788810935)">
+                    <path id="blob1" d="M55.9 -67.9C68.4 -43.4 71.7 -21.7 71 -0.7C70.3 20.3 65.5 40.5 53 58.4C40.5 76.2 20.3 91.6 -5.5 97.1C-31.3 102.7 -62.7 98.4 -87.7 80.5C-112.7 62.7 -131.3 31.3 -132.9 -1.5C-134.4 -34.4 -118.8 -68.8 -93.8 -93.3C-68.8 -117.8 -34.4 -132.4 -6.4 -126C21.7 -119.7 43.4 -92.4 55.9 -67.9" fill="#ff0066"></path>
+                </g>
+                <g transform="translate(449.983874199404 167.2728495282357)" style="visibility: hidden">
+                    <path id="blob2" d="M87.7 -87.2C112.7 -62.7 131.3 -31.3 124.7 -6.6C118.1 18.1 86.3 36.3 61.3 50C36.3 63.6 18.1 72.8 -7.9 80.7C-33.9 88.6 -67.9 95.2 -92.4 81.5C-116.9 67.9 -131.9 33.9 -123.8 8.1C-115.7 -17.7 -84.4 -35.4 -59.9 -59.9C-35.4 -84.4 -17.7 -115.7 6.8 -122.5C31.3 -129.3 62.7 -111.7 87.7 -87.2" fill="#ff0066"></path>
+                </g>
+            </svg>
+
+            <script>
+                const tween = KUTE.fromTo(
+                    '#blob1',
+                    {path: '#blob1'},
+                    {path: '#blob2'},
+                    {repeat: 999, duration: 3000, yoyo: true}
+                )
+                tween.start()
+            </script>
+
+
             <div class="wave4">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>

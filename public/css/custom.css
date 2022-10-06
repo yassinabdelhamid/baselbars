@@ -130,3 +130,8 @@ section {
 .wave4 .shape-fill {
     fill: #FF0066;
 }
+
+.blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+}
