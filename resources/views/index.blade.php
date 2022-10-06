@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="habibiyassin" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     <title>BaselBars</title>
 </head>
 
@@ -70,10 +71,15 @@
 
             <script>
                 const tween = KUTE.fromTo(
-                    '#blob1',
-                    {path: '#blob1'},
-                    {path: '#blob2'},
-                    {repeat: 999, duration: 3000, yoyo: true}
+                    '#blob1', {
+                        path: '#blob1'
+                    }, {
+                        path: '#blob2'
+                    }, {
+                        repeat: 999,
+                        duration: 3000,
+                        yoyo: true
+                    }
                 )
                 tween.start()
             </script>
