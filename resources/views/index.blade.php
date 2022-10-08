@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="{{ mix('/js/app.js') }}"></script>
     <title>BaselBars</title>
 </head>
@@ -36,9 +37,9 @@
             </section>
 
             <section>
-                @foreach ($bar as $bars)
                 <h1>Bars</h1>
-                <p>Random Bars: {{$bars->name}}</p>
+                <!-- Add foreach bar as bars,  variable ($bars->name), endforeach-->
+                <p>Random Bars</p>
                 <button class="button-24" role="button" id="barButton" onclick="getRandomBarId()">Press me for a drink</button>
                 <div class="wave3">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -47,7 +48,6 @@
                         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                     </svg>
                 </div>
-                @endforeach
             </section>
 
 
