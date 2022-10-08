@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="habibiyassin" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     <title>BaselBars</title>
 </head>
 
@@ -59,7 +58,9 @@
 
         <section>
             <h1>About Us</h1>
-            <p>Random blablablablablabalabalabalabablabalabalbalablablablalabablalbalbalbalabl</p>
+            <p>If you like this page feel free to support your locals by some extra caffeine for us!</p>
+            <br>
+            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="habibiyassin" data-color="#ff0066" data-emoji="" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00"></script>
             <svg id="visual" viewBox="0 0 900 300" width="900" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                 <g transform="translate(480.95534248758355 164.05332788810935)">
                     <path id="blob1" d="M55.9 -67.9C68.4 -43.4 71.7 -21.7 71 -0.7C70.3 20.3 65.5 40.5 53 58.4C40.5 76.2 20.3 91.6 -5.5 97.1C-31.3 102.7 -62.7 98.4 -87.7 80.5C-112.7 62.7 -131.3 31.3 -132.9 -1.5C-134.4 -34.4 -118.8 -68.8 -93.8 -93.3C-68.8 -117.8 -34.4 -132.4 -6.4 -126C21.7 -119.7 43.4 -92.4 55.9 -67.9" fill="#ff0066"></path>
