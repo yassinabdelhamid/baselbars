@@ -18,8 +18,9 @@
     <div class="container">
         <div id="app">
             <section class="blue">
-                <h1>Welcome Text</h1>
-                <p>Random blablablablablabalabalabalabablabalabalbalablablablalabablalbalbalbalabl</p>
+                <h1>WELCOME TO YOUR NEXT CULINARY ADVENTURE</h1>
+                <p>Can't decide where to go for a drink or a good meal?<br>
+                    We can take care of that, just press the buttons below!</p>
                 <div class="wave">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -38,7 +39,7 @@
                 @foreach ($bar as $bars)
                 <h1>Bars</h1>
                 <p>Random Bars: {{$bars->name}}</p>
-                <button class="button-24" role="button">Press me for a drink</button>
+                <button class="button-24" role="button" id="barButton" onclick="getRandomBarId()">Press me for a drink</button>
                 <div class="wave3">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -74,20 +75,6 @@
                     </g>
                 </svg>
 
-                <script>
-                    const tween = KUTE.fromTo(
-                        '#blob1', {
-                            path: '#blob1'
-                        }, {
-                            path: '#blob2'
-                        }, {
-                            repeat: 999,
-                            duration: 3000,
-                            yoyo: true
-                        }
-                    )
-                    tween.start()
-                </script>
 
 
                 <div class="wave4">
@@ -100,6 +87,29 @@
             </section>
         </div>
     </div>
+
+
+    <script>
+        const tween = KUTE.fromTo(
+            '#blob1', {
+                path: '#blob1'
+            }, {
+                path: '#blob2'
+            }, {
+                repeat: 999,
+                duration: 3000,
+                yoyo: true
+            }
+        )
+        tween.start()
+    </script>
+
+    <script>
+        function getRandomBarId() 
+        {
+            document.getElementById('barButton').innerHTML = Math.floor(Math.random() * 10);
+        }
+    </script>
 </body>
 
 </html>
