@@ -50,9 +50,21 @@
                     </svg>
                 </div>
                 @endforeach
+                <script>
+                    $(document).ready(function() {
+                        var response = 'fail';
+                        $.ajax({ 
+                            type: "GET",
+                            url: "app\Http\Controllers\IndexController.php",
+                            async: false,
+                            success: function(text) {
+                                response = text;
+                            }
+                        });
+                        alert(response);
+                    })
+                </script>
             </section>
-
-
 
             <section class="red">
                 <h1>Restaurants</h1>
