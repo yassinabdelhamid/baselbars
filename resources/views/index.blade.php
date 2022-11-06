@@ -41,12 +41,12 @@
                 <h1>Bars</h1>
                 <p>You deserve a drink! Go treat yourself</p>
                 <!--<p>{{$bars->name}}</p>-->
-                <button class="button-24" role="button" id="barButton" onclick="displayFromDatabase()">Press me for a drink</button>
+                <button class="button-24" role="button" id="barButton">Press me for a drink</button>
                 <table id="dataTableBars">
                     <thead>
                         <tr>
-                            <th id="BarName">Name</th>
-                            <th id="BarLocation">Locations</th>
+                            <th id="BarName"></th>
+                            <th id="BarLocation"></th>
                         </tr>
                     </thead>
                 </table>
@@ -59,21 +59,14 @@
                 </div>
                 @endforeach
                 <script>
-                    function displayFromDatabase()
-                    {
-                        $.ajax({
-                            url: "app\Http\Controllers\IndexController.php",
-                            type: "GET",
-                            async: flase,
-                            data: {
-                                "BarName": 1
-                            }
-                            success: function(data)
-                            {
-                                $(#display).html(data);
-                            }
+                    $(document).ready(function(){
+                        $('#barButton').click(function(){
+                            $.get('getRequest', function(data){
+                                $('#BarName').append(data);
+                                console.log(data);
+                            })
                         })
-                    }
+                    })
                 </script>
             </section>
 
